@@ -29,5 +29,5 @@ We used the following command for decoding the Video: ```ffmpeg -y -vsync 0 -hwa
 
 Performance Profile        |  Files in Folder
 :-------------------------:|:-------------------------:
-![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.%20Decoded.jpg)  |  ![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.01.%20Decoded_files.jpg")
+![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.%20Decoded.jpg  width="256")  |  ![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.01.%20Decoded_files.jpg"  width="256")
 
