@@ -55,6 +55,7 @@ We used the following command for decoding the Video: ```ffmpeg -y -vsync 0 -c:v
   </tr>
 </table>
 
+# FINAL RESULTS
 ## After FFMPEG and OpenCV used for Decoding
 The hardware encoder changes in the performace profile can be observed in the following image.
 
