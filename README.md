@@ -26,7 +26,8 @@ We used the following command for decoding the Video: ```ffmpeg -y -vsync 0 -hwa
 
 **After Transcoding**
 
-<img src="https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.%20Decoded.jpg" alt="DecodingTask#1" width="256"/>
-<img src="https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.01.%20Decoded_files.jpg" alt="DecodedFiles#2" width="256"/>
 
+Performance Profile        |  Files in Folder
+:-------------------------:|:-------------------------:
+![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.%20Decoded.jpg)  |  ![](https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/03.01.%20Decoded_files.jpg")
 
