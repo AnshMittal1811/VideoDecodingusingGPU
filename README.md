@@ -5,7 +5,7 @@ This repository emphaasizes my brief exposure with FFMPEG. Here, I have gone thr
 ## Transcoding
 **Command Used**
 
-We used the command given below ```ffmpeg -y -vsync 0 -hwaccel cuvid -resize 320x180 -c:v h264_cuvid -i ./Data/Source/Source1.mp4 -c:a copy -c:v h264_nvenc -b:v 5M ./Data/Transcoded/T_1.mp4'''
+We used the command given below ```ffmpeg -y -vsync 0 -hwaccel cuvid -resize 320x180 -c:v h264_cuvid -i ./Data/Source/Source1.mp4 -c:a copy -c:v h264_nvenc -b:v 5M ./Data/Transcoded/T_1.mp4```
 
 **Before Transcoding**
 
