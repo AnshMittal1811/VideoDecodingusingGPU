@@ -20,9 +20,27 @@ We used the following command for transcoding the Video:```ffmpeg -y -vsync 0 -h
 
 ## Encoding and Decoding
 
+### Encoding
+
 **Command Used**
 
-We used the following command for decoding the Video: ```ffmpeg -y -vsync 0 -hwaccel cuvid -resize 320x180 -c:v h264_cuvid -i ./Data/Source/Source1.mp4 -c:a copy -c:v h264_nvenc -b:v 5M ./Data/Transcoded/T_1.mp4```. The hardware decoder changes in the performace profile and the folder under consideration can be observed in the following image.
+We used the following command for encoding the Video: ```ffmpeg -y -vsync 0 -s 160x90 -i ./Data/Y_U_V_file1.yuv -c:v h_264_nvenc ./Data/Encode1.mp4```. The hardware encoder changes in the performace profile and the folder under consideration can be observed in the following image.
+
+**After Transcoding**
+
+<table>
+  <tr>
+    <td valign="top"><img src="https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/04.01.%20Encoded_files.jpg" alt="EncodingTask#1" width="512"></td>
+    <td valign="top"><img src="https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/04.02.%20Encoded_files.jpg" alt="EncodingTask#2" width="512"></td>
+  </tr>
+</table>
+
+
+### Decoding
+
+**Command Used**
+
+We used the following command for decoding the Video: ```ffmpeg -y -vsync 0 -c:v h264_cuvid -i ./Data/Source1.mp4 ./Data/Y_U_V_file1.yuv```. The hardware decoder changes in the performace profile and the folder under consideration can be observed in the following image.
 
 **After Transcoding**
 
