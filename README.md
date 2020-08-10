@@ -7,8 +7,7 @@ Here, I mention the prerequisites t install FFMPEG to your system for Windows.
 
 
 ## Initial State of GPU Hardware
-The following image presents a performance profile for the NVIDIA GTX1060 GPU on my computer.
-
+The following image presents a performance profile for the NVIDIA GTX1060 GPU on my system. This system is an Acer Predator Helios laptop.
 <img src="https://github.com/AnshMittal1811/VideoDecodingusingGPU/blob/master/Images/01.%20Normal.jpg" alt="NormalTask#1" width="512"/>
 
 
