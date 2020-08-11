@@ -11,6 +11,9 @@ Here, I mention the prerequisites to install and compile FFMPEG to your system f
 - Step 4: Create a folder named nv_sdk in the parent directory of FFmpeg and copy all the header files from C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include and library files from C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64 to nv_sdk folder.
 - Step 5: Launch the Visual Studio x64 Native Tools Command Prompt.
 - Step 6: From the Visual Studio x64 Native Tools Command Prompt, launch the MinGW64 environment by running ```mingw64.exe``` from the msys2 installation folder.
+- Step 7: In the MinGW64 environment, install the necessary packages by: ```pacman -S diffutils make pkg-config yasm```
+- Step 8: Add the following paths by running the following commands: ```export PATH="/c/Program Files (x86)/Microsoft Visual Studio 12.0/VC/BIN/amd64/":$PATH
+export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/bin/":$PATH```
 
 
 
