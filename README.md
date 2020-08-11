@@ -12,7 +12,9 @@ Here, I mention the prerequisites to install and compile FFMPEG to your system f
 - Step 5: Launch the Visual Studio x64 Native Tools Command Prompt.
 - Step 6: From the Visual Studio x64 Native Tools Command Prompt, launch the MinGW64 environment by running ```mingw64.exe``` from the msys2 installation folder.
 - Step 7: In the MinGW64 environment, install the necessary packages by: ```pacman -S diffutils make pkg-config yasm```
-- Step 8: Add the following paths by running the following commands: ```export PATH="/c/Program Files (x86)/Microsoft Visual Studio 12.0/VC/BIN/amd64/":$PATH
+- Step 8: Add the following paths by running the following commands: 
+```export PATH="/c/Program Files (x86)/Microsoft Visual Studio 12.0/VC/BIN/amd64/":$PATH
+
 export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/bin/":$PATH```
 
 
