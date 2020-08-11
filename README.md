@@ -2,6 +2,9 @@
 
 This repository emphaasizes my brief exposure with FFMPEG. Here, I have gone through the process of how I compiled my FFMPEG on Windows system. This repo also deals with Transcoding, Decoding and Encoding of the video on the NVIDIA hardware accelerator. 
 
+## Prerequisites
+FFmpeg with NVIDIA GPU acceleration is supported on all Windows platforms, with compilation through Microsoft Visual Studio 2013 SP2 and above, and MinGW.
+
 ## Steps to compile the FFMPEG module for Windows
 Here, I mention the prerequisites to install and compile FFMPEG to your system for Windows. The following are the steps for the installation and compilation of FFMPEG.
 
@@ -13,11 +16,17 @@ Here, I mention the prerequisites to install and compile FFMPEG to your system f
 - Step 6: From the Visual Studio x64 Native Tools Command Prompt, launch the MinGW64 environment by running ```mingw64.exe``` from the msys2 installation folder.
 - Step 7: In the MinGW64 environment, install the necessary packages by: ```pacman -S diffutils make pkg-config yasm```
 - Step 8: Add the following paths by running the following commands: 
-```export PATH="/c/Program Files (x86)/Microsoft Visual Studio 12.0/VC/BIN/amd64/":$PATH
+```export PATH="/c/Program Files (x86)/Microsoft Visual Studio 17.0/VC/BIN/amd64/":$PATH```
 
-export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/bin/":$PATH```
+```export PATH="/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin/":$PATH```
+- Step 9: Goto nv-codec-headers directory and install ffnvcodec by: ```make install PREFIX=/usr```
+- Step 10: Go to the FFmpeg installation folder and run the following command: 
+```./configure --enable-nonfree –disable-shared --enable-cuda-sdk --enable-libnpp --toolchain=msvc --extra-cflags=-I../nv_sdk --extra-ldflags=-libpath:../nv_sdk```
+- Step 11: Compile the code by executing the following command.
+```make -j 8```
 
-
+In addition to this, you can also download the ready build from [here](http://ffmpeg.zeranoe.com/builds). A drawback to these readily available builds is that these build do not have scale_npp filter by default, the scale_npp filter is included in the build
+when ```--enable-nonfree``` switch is turned on while configuring FFmpeg.
 
 
 ## Initial State of GPU Hardware
