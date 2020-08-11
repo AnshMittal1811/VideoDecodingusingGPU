@@ -2,15 +2,16 @@
 
 This repository emphaasizes my brief exposure with FFMPEG. Here, I have gone through the process of how I compiled my FFMPEG on Windows system. This repo also deals with Transcoding, Decoding and Encoding of the video on the NVIDIA hardware accelerator. 
 
-## Prerequisites
+## Steps to compile the FFMPEG module for Windows
 Here, I mention the prerequisites to install and compile FFMPEG to your system for Windows. The following are the steps for the installation and compilation of FFMPEG.
 
 - Step 1: Install msys2 from [msys2](www.msys2.org)
 - Step 2: Clone ffnvcodec by typing the following in the Prompt: ```git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git```
 - Step 3: Clone FFmpeg's public GIT repository in the same folder: ```git clone https://git.ffmpeg.org/ffmpeg.git```
 - Step 4: Create a folder named nv_sdk in the parent directory of FFmpeg and copy all the header files from C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include and library files from C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64 to nv_sdk folder.
+- Step 5: Launch the Visual Studio x64 Native Tools Command Prompt.
+- Step 6: From the Visual Studio x64 Native Tools Command Prompt, launch the MinGW64 environment by running ```mingw64.exe``` from the msys2 installation folder.
 
-- Step 5:
 
 
 
